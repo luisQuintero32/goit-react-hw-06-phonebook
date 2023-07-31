@@ -1,4 +1,4 @@
-import actions from '../../redux/contacts/contacts-actions';
+import * as actions from '../../redux/contacts/contacts-actions';
 import { getItems, getFilter } from "redux/contacts/contacts-selectors";
 import { useDispatch, useSelector } from "react-redux";
 import { useState } from 'react';

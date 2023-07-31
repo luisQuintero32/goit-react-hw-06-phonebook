@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import actions from '../../redux/contacts/contacts-actions'
+import * as actions from '../../redux/contacts/contacts-actions'
 import { getItems, getFilter } from "redux/contacts/contacts-selectors";
 import style from '../ContactList/ContacsList.module.css';
 

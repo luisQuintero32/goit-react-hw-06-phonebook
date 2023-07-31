@@ -17,15 +17,15 @@ const itemsPersistConfig = {
     key: 'items',
     storage,
     blacklist: ['filter'],
-}
+};
 
 const store = configureStore({
     reducer: {
         contacts: persistReducer(itemsPersistConfig, contactsReducer),
     },
     middleware,
-})
+});
 
 const persistor = persistStore(store);
 
-export default {store, persistor};
+export {persistor, store};
